@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
 
-  <script>
+    const people = [
+      {
+        name: "Carly",
+        yearOfBirth: 1942,
+        yearOfDeath: 1970,
+      },
+      {
+        name: "Ray",
+        yearOfBirth: 1962,
+        yearOfDeath: 2011,
+      },
+      {
+        name: "Jane",
+        yearOfBirth: 1912,
+        yearOfDeath: 1941,
+      },
+    ];
 
 const findTheOldest = function(people) {
-    
- let carlysDeath, raysDeath, janesDeath;
-
-    if(people[0].yearOfDeath != undefined) {
-carlysDeath = people[0].yearOfDeath;
-    } else {
-carlysDeath = Number((new Date()).toString().split(" ")[3]);
-    };
-
-let carlysAge = carlysDeath - people[0].yearOfBirth;
+let carlysAge = people[0].yearOfDeath - people[0].yearOfBirth;
 let raysAge = people[1].yearOfDeath - people[1].yearOfBirth;
 let janesAge = people[2].yearOfDeath - people[2].yearOfBirth;
 
@@ -37,8 +36,7 @@ let oldestIndex = ages.indexOf(sortedAges[2]);
     return people[oldestIndex];
 };
 
-// findTheOldest(people);
-  </script>
+findTheOldest(people);
 
-</body>
-</html>
+// Do not edit below this line
+module.exports = findTheOldest;
