@@ -1,10 +1,15 @@
-const convertToCelsius = function(degrees) {
-  return +((5/9) * (degrees - 32)).toFixed(1)
-};
+function convertToFahrenheit(celsius) {
+let fahrenheit = (celsius * (9/5)) + 32;
+return +fahrenheit.toFixed(1);
+}
 
-const convertToFahrenheit = function(degrees) {
-  return +((degrees * (9/5)) + 32).toFixed(1)
-};
+function convertToCelsius(fahrenheit) {
+let celsius = (fahrenheit - 32) * (5/9);
+return +celsius.toFixed(1);
+}
+
+// console.log(convertToFahrenheit(0))
+console.log(convertToCelsius(32))
 
 // Do not edit below this line
 module.exports = {
