@@ -1,3 +1,4 @@
+
 function removeFromArray(...msg) {
     let array = msg.at(0);
     let size = msg.length;
@@ -12,7 +13,11 @@ function removeFromArray(...msg) {
 
     return (array)
 }
-console.log(removeFromArray([1, 4, 4, 2, 3], 3, 4))
+
+
+
+
+console.log(removeFromArray([1, 4, 4, 2, 3], 3, 4, 0))
 
 
 
