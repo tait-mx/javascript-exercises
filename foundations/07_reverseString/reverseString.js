@@ -1,13 +1,10 @@
-const reverseString = function(string) {
- let size = string.length - 1;
-let final = "";
-for (let i = size; i >= 0; --i) {
-    final += string[i];
+
+function reverseString(string) {
+
+return string.split("").reverse().join("");
 }
-return final;
 
-};
-
+console.log(reverseString("123! abc! Hello, Odinite."))
 
 // Do not edit below this line
 module.exports = reverseString;
