@@ -5,9 +5,8 @@ function sumAll(int1, int2) {
         Math.round(int2) === int2 &&
         typeof (int1) == "number" &&
         typeof (int2) == "number")  {
-        let arr = [int1, int2];
         let sum = 0;
-        let arrSort = arr.sort((a, b) => a - b);
+        let arrSort = [int1, int2].sort((a, b) => a - b);
         for (let i = arrSort[0]; i <= arrSort[1]; i++) {
             sum = sum + i;
         }
